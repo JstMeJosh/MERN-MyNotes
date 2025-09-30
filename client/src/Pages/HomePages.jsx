@@ -12,7 +12,7 @@ const HomePages = () => {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const res = await axiosInstance.get("/notes");
+        const res = await axiosInstance.get("/home/notes");
         console.log(res.data);
         setNotes(res.data);
       } catch (error) {

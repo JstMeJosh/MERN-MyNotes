@@ -9,7 +9,7 @@ import {
 
 const router = express.Router();
 
-router.get("/", getAllNotes);
+router.get("/home", getAllNotes);
 router.get("/:id", getNoteById);
 router.post("/", createNote);
 router.put("/:id", updateNote);
